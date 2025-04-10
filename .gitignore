@@ -1,0 +1,23 @@
+# .gitignore
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore build output
+dist/
+build/
+
+# Ignore environment variables
+.env
+.env.local
+.env.*.local
+
+# Optional: Ignore log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: Ignore IDE settings
+.vscode/
+.idea/
+.DS_Store
