@@ -2,17 +2,26 @@
     "name": "webpack-sandbox",
     "version": "1.0.0",
     "scripts": {
-        "start": "webpack serve --open",
-        "build": "webpack"
+        "build": "webpack --config webpack.prod.js",
+        "build:dev": "webpack --config webpack.dev.js",
+        "start": "webpack serve --config webpack.dev.js"
     },
     "devDependencies": {
+        "@babel/core": "^7.26.10",
+        "@babel/preset-env": "^7.26.9",
+        "babel-loader": "^10.0.0",
         "css-loader": "^7.1.2",
         "mini-css-extract-plugin": "^2.9.2",
         "sass": "^1.86.3",
         "sass-loader": "^16.0.5",
         "style-loader": "^4.0.0",
+        "terser-webpack-plugin": "^5.3.14",
         "webpack": "^5.99.5",
         "webpack-cli": "^4",
-        "webpack-dev-server": "^4"
+        "webpack-dev-server": "^4",
+        "webpack-merge": "^6.0.1"
+    },
+    "volta": {
+        "node": "20.17.0"
     }
 }

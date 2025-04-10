@@ -80,3 +80,11 @@ module.exports = {
   mode: 'development',
 };
 ```
+
+# Notes
+
+TerserPlugin is used to minify javascript
+
+```console
+npm install --save-dev terser-webpack-plugin
+```
