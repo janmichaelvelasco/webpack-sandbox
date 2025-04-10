@@ -1,0 +1,13 @@
+{
+    "name": "webpack-sandbox",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "webpack serve --open",
+      "build": "webpack"
+    },
+    "devDependencies": {
+      "webpack": "^5",
+      "webpack-cli": "^4",
+      "webpack-dev-server": "^4"
+    }
+  }
